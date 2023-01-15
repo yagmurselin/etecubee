@@ -63,6 +63,9 @@ export default class ExerciseList extends Component {
     });
   }
 
+  //  exercises.sort((a, b) => b.updatedAt - a.updatedAt).filter(
+  //(exercises, index) => index < 3 && exercises
+  //);
   render() {
     return (
       <div>

@@ -1,0 +1,17 @@
+#login-card {
+  border: 2px solid black;
+  background-color: rgba(3, 10, 24, 0.4);
+  border-radius: 15px;
+  color: rgb(245, 245, 245);
+  padding: 2rem;
+  box-shadow: 5px 5px 10px rgb(124, 101, 200);
+}
+
+#login-button {
+  margin-bottom: 10px;
+}
+
+.Typo {
+  align-items: center;
+  justify-content: center;
+}
