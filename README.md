@@ -1,3 +1,16 @@
+
+#etecube assignment explanation
+Application starts with a classical login page without any backend.
+At main page there is a table which lists companies and their exercises.
+After creating a company you can add exercises about the created company such as company number, and incorporation country etc.
+At listing page you can switch to update and delete exercise page.
+All changes you make affects the table at MongoDB.
+
+This application includes MongoDB,NodeJS,Antd,Axios,Router,Express.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
