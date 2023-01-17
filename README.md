@@ -12,7 +12,14 @@ All changes you make affects the table at MongoDB.
 
 This application includes MongoDB,NodeJS,Antd,Axios,Router,Express.
 
-After starting th assingnment with 'npm start command' you should run our backend server within the path 'etecube\backend>nodemon server'
+Once you downloaded etecubee you should run npm i command at both /etecubee and etecubee/backend files for project to download modules.
+
+When all files are downloaded you can go to command line and run 'etecube\backend>nodemon server' 
+
+"Server port 5000 de calisiyor.
+MongoDB database baglantisi basarili."----> This will be your output if you run backend correctly.
+
+After that you can run 'npm start' at 'etecube' file and your job with command line is over.
 
 
 
