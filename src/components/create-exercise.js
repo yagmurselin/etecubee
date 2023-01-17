@@ -137,7 +137,6 @@ export default class CreateExercise extends Component {
             />
           </div>
         </form>
-        <p> You are on the Create Exercises Component ! </p>
       </div>
     );
   }
