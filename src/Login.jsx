@@ -1,7 +1,9 @@
 import React, { Component, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Form, Input, Typography } from "antd";
+import { Button, Form, Input, Typography, Checkbox } from "antd";
+import "antd/dist/reset.css";
 import "./login.css";
+import Register from "./Register";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -37,37 +39,76 @@ const Login = () => {
   const handleSignup = async () => {
     // TODO
     // navigate to Sign-up page
-    navigate("/sign-up"); // uncomment this when
+    navigate("/create"); // uncomment this when
   };
 
   return (
-    <div id="login-card">
-      <Form className="LoginForm">
-        <Typography.Title className="Typo" color="primary">
-          Welcome
-        </Typography.Title>
-        <Form.Item label="Email" name={"myEmail"}>
-          <Input placeholder="Username" />
-        </Form.Item>
-        <Form.Item label="Password" name={"myPassword"}>
-          <Input placeholder="Password" />
-        </Form.Item>
-        <Button
-          type="primary"
-          htmlType="submit"
-          block
-          id="login-button"
-          onClick={handleLogin}
+    <div className="login-div">
+      <Form
+        className="basic"
+        labelCol={{
+          span: 8,
+        }}
+        wrapperCol={{
+          span: 16,
+        }}
+        initialValues={{
+          remember: true,
+        }}
+        autoComplete="off"
+      >
+        <Form.Item
+          label="Username"
+          name="username"
+          rules={[
+            {
+              required: true,
+              message: "Please input your username!",
+            },
+          ]}
         >
-          Login
-        </Button>
+          <Input />
+        </Form.Item>
 
-        <div className="socialLogin">
-          <Button type="primary" htmlType="submit" block onClick={handleSignup}>
-            {" "}
-            Sign-up{" "}
+        <Form.Item
+          label="Password"
+          name="password"
+          rules={[
+            {
+              required: true,
+              message: "Please input your password!",
+            },
+          ]}
+        >
+          <Input.Password />
+        </Form.Item>
+
+        <Form.Item
+          name="remember"
+          valuePropName="checked"
+          wrapperCol={{
+            offset: 8,
+            span: 16,
+          }}
+        >
+          <Checkbox>Remember me</Checkbox>
+        </Form.Item>
+
+        <Form.Item
+          wrapperCol={{
+            offset: 8,
+            span: 16,
+          }}
+        >
+          <Button
+            type="primary"
+            htmlType="login"
+            onClick={handleSignup}
+            handleSignup={Register}
+          >
+            Login
           </Button>
-        </div>
+        </Form.Item>
       </Form>
     </div>
   );
