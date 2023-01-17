@@ -12,7 +12,7 @@ All changes you make affects the table at MongoDB.
 
 This application includes MongoDB,NodeJS,Antd,Axios,Router,Express.
 
-Once you downloaded etecubee you should run npm i command at both /etecubee and etecubee/backend files for project to download modules.
+Once you downloaded etecubee you should run 'npm i' command at both /etecubee and etecubee/backend files for to download necessary modules.
 
 When all files are downloaded you can go to command line and run 'etecube\backend>nodemon server' 
 
