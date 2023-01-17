@@ -12,6 +12,8 @@ All changes you make affects the table at MongoDB.
 
 This application includes MongoDB,NodeJS,Antd,Axios,Router,Express.
 
+After starting th assingnment with 'npm start command' you should run our backend server within the path 'etecube\backend>nodemon server'
+
 
 
 
